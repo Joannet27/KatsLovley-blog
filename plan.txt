@@ -1,0 +1,32 @@
+About: 
+    A website and profolio page that intoduce the work and characterlistic of KatsLovely
+
+
+Number of pages:
+    > home page
+        Plan:
+        (+) header, pfp, pronouwns age
+        menue list under 
+        welcome message
+        <undecide but need a box here>
+            -highlights works or what ever want to add
+    > About me/contact page:
+        Plan
+            > breif into about me
+            > show skills
+            > add image 
+            > under is a contact
+    > Works/Project:
+        Plan:
+        shows case all the edits made here
+            - look like a list of polariod on a board
+            - adjust to tilt 
+        (Advance) add on and customize 
+                - draw lines and stuff to make it like a bulleting or pegboard
+                - add magnets/ pins to add in the board
+                - make it animated when hover pop up 
+                - add merch in
+    > Husbando Shrine:
+        optiona joke page to intoduct the bias characters
+        plan:
+            - would look like a character intoduction from otome websites
