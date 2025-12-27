@@ -16,31 +16,50 @@
 
         /* need to set the positions of the shapes to overlap */
         .borderimage {
-            height: 100px;
+            height: 150px;
             display: flex;
-            align-items: center;
+            flex-direction: row;
             justify-content: flex-start;
             background-color: grey;
-            overflow: hidden;
+            overflow: hidden;;
         }
-
+        .Profile {
+            position:fixed;
+            top: 21%;
+            left: 150px;
+            width: 22%;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightgray;
+            box-shadow: -5px 5px 15px black;
+        }
+        .name {
+            background-color: grey;
+            width: 90%;
+            border: 2px solid black;
+            margin-top: 5%;
+        }
         /* profile image*/
         .circle {
-            height: 100px;
-            width: 100px;
+            height: 150px;
+            width: 150px;
+            margin: 10px auto;
             background-color: white;
             border-radius: 50%;
             z-index: 1;
         }
+        #Name {
+            text-align: center;
+            text-shadow: none;
+        }
 
         /* side box css */
         .sideBox {
-            /* float: left; */
-            position: relative;
-            left: 120px;
-            width: 200px;
+            width: 90%;
+            margin: 15px;
             padding: 1%;
-            box-shadow: 5px 5px 5px black;
             background-color: grey;
             border: 2px solid black;
         }
@@ -48,25 +67,27 @@
         #navig ul {
             list-style-type: none;
             padding: 0;
+            margin: 10px;
         }
 
         #navig ul li {
-            padding: 8px 10px;
+            padding: 10px;
             border: 1px solid black;
             border-radius: 25px;
             margin-bottom: 7px;
-            background-color:palevioletred;
+            background-color: palevioletred;
             /* TBS color */
             color: black;
             text-shadow: none;
+            text-align: center;
         }
 
         /* welcome mesage box css */
         .messageBox {
-            position: relative;
-            bottom: 400px;
-            left: 120px;
-            width: 50%;
+            position: fixed;
+            bottom: 45%;
+            left: 35%;
+            width: 40%;
             border: 2px solid black;
             background-color: lightgray;
             box-shadow: 5px 5px 5px black;
@@ -85,14 +106,17 @@
 
 <body>
     <div class="borderimage"></div>
+    <!-- profile image an naviagtion -->
     <div class="Profile">
-        <div class="circle"></div>
-        <div class="sideBox">
+        <div class="name">
+            <div class="circle"></div>
             <div id="Name">
                 <h1>KatsLovley</h1>
                 <h3>she/her/they</h3>
             </div>
+        </div>
 
+        <div class="sideBox">
             <div id="navig">
                 <ul>
                     <li>About me</li>
@@ -102,8 +126,6 @@
                 </ul>
             </div>
         </div>
-
-
     </div>
 
 
