@@ -1,81 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <title>KatsLovley</title>
-    <head>
-        <!--javascript link-->
-        <!-- color light salmon -->
-        <style>
-            body { 
-                background-color: rgb(199, 112, 240);
-                color: lightgray;
-                text-shadow: 3px 0px 0px black;
-                margin: 0;
-                padding: .5%;
-            }
-            /* need to set the positions of the shapes to overlap */
-            .borderimage{
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                background-color: grey;
-                overflow: hidden;
-            }
-            .circle{
-                height: 100px;
-                width: 100px;
-                background-color: white;
-                border-radius: 50%;
-                z-index: 1;
-            }
-            .messageBox{
-                border: 2px solid black;
-                background-color: lightgray;
-                box-shadow: 5px 5px 5px black;
-                margin: auto;
-                padding: 2%;
-            }
-            .messageBox #hello{
-                margin-left: 10px;
-                margin-right: 10px;
-                color: black;
-                text-shadow: none;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="borderimage"></div>
-        <div class="Profile">
-            <div class="circle"></div>
+<title>KatsLovley</title>
+
+<head>
+    <!--javascript link-->
+    <!-- color light salmon -->
+    <style>
+        body {
+            background-color: rgb(199, 112, 240);
+            color: lightgray;
+            text-shadow: 3px 0px 0px black;
+            margin: 0;
+            padding: .5%;
+        }
+
+        /* need to set the positions of the shapes to overlap */
+        .borderimage {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: grey;
+            overflow: hidden;
+        }
+
+        /* profile image*/
+        .circle {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* side box css */
+        .sideBox {
+            float: left;
+            width: 30%;
+            padding: 1%;
+            box-shadow: 5px 5px 5px black;
+            background-color: grey;
+            border: 2px solid black;
+        }
+
+        #navig ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #navig ul li {
+            padding: 8px 10px;
+            border: 1px solid black;
+            border-radius: 25px;
+            margin-bottom: 7px;
+            background-color:palevioletred;
+            /* TBS color */
+            color: black;
+            text-shadow: none;
+        }
+
+        /* welcome mesage box css */
+        .messageBox {
+            
+            border: 2px solid black;
+            background-color: lightgray;
+            box-shadow: 5px 5px 5px black;
+            margin: auto;
+            padding: 2%;
+        }
+
+        .messageBox #hello {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: black;
+            text-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="borderimage"></div>
+    <div class="Profile">
+        <div class="circle"></div>
+        <div class="sideBox">
             <div id="Name">
-                <h1>KatsLovley note to me --> not porfolio </h1>
+                <h1>KatsLovley</h1>
                 <h3>she/her/they</h3>
             </div>
+
             <div id="navig">
-                <h3>menue</h3>
-               <ul>
-                <li>about me + contact</li>
-                <li>porfolio</li>
-                <li>Works</li>
-                <li>shrine</li>
-               </ul>
-               <p>social media</p>
-               <ul>
-                <li>icon row of socials</li>
-               </ul>
+                <ul>
+                    <li>About me</li>
+                    <li>Porfolio</li>
+                    <li>Works</li>
+                    <li>shrine</li>
+                </ul>
+                <p>social media</p>
+                <ul>
+                    <li>icon row of socials</li>
+                </ul>
             </div>
         </div>
-            
 
-        <div class="messageBox">
-            <div id="hello">
-                <h1 style="text-align: center;">Welcome to my page!</h1>
-                <p> hello my name is Katslovely please to meet you welcome to my webpage look around</p>
-                <p>cue items to add here</p>
-                <p>add liked iconts to the pages</p>
-            </div>
 
+    </div>
+
+
+    <div class="messageBox">
+        <div id="hello">
+            <h1 style="text-align: center;">Welcome to my page!</h1>
+            <p> hello my name is Katslovely please to meet you welcome to my webpage look around</p>
+            <p>cue items to add here</p>
+            <p>add liked iconts to the pages</p>
         </div>
-        
-    </body>
+
+    </div>
+
+</body>
+
 </html>
