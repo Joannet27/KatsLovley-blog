@@ -2,8 +2,8 @@
 - A remake version of the Katslovley blog I made for a class project 
 ## goals:
 - The goal of this page is to make a website that would also serve as a portfolio site for my friend, as well as a space to be on 
-- **My goal is to redesign the website, the planned ideal theme of the page, and challenge my way on make it work**
-*without time restrictions*
+- My goal is to redesign the website, the planned ideal theme of the page, and challenge my way on make it functional
+  **without time restrictions**
 ### functionality
 - This website is based on the amazing creation on the Neocities website
 where user can explore and enjoy expressing themself and place their work on
