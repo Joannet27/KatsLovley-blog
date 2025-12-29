@@ -5,7 +5,7 @@
 - My goal is to redesign the website, the planned ideal theme of the page, and challenge my way on make it functional
   **without time restrictions**
 ### functionality
-- This website is based on the amazing creation on the Neocities website
+This website is based on the amazing creation on the Neocities website
 where user can explore and enjoy expressing themself and place their work on
 **There would be a:**
 - *welcome page*
