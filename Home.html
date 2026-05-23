@@ -22,14 +22,13 @@
             justify-content: flex-start;
             background-color: grey;
             overflow: hidden;
-            ;
         }
 
         .Profile {
-            position: fixed;
+            position: sticky;
             top: 21%;
             left: 150px;
-            width: 22%;
+            width: 17%;
             height: 75%;
             display: flex;
             flex-direction: column;
@@ -44,21 +43,21 @@
             width: 90%;
             border: 2px solid black;
             margin-top: 5%;
+            font-size:1.5vw;
         }
 
         /* profile image*/
         .circle {
-            height: 150px;
-            width: 150px;
-            margin: 10px auto;
-            background-color: white;
+            width:100%;
+            aspect-ratio: 1/1;
             border-radius: 50%;
-            z-index: 1;
+            background-color: white;
         }
 
         #Name {
             text-align: center;
             text-shadow: none;
+            
         }
 
         /* side box css */
@@ -86,17 +85,18 @@
             color: black;
             text-shadow: none;
             text-align: center;
+            font-size:clamp(14px, 1.9vw, 24px);
+            font-size:1.5vw;
         }
 
         /* welcome mesage box css */
         .messageBox {
-            position: fixed;
+            position: sticky;
             top: 21%;
             left: 35%;
             width: 40%;
             border: 2px solid black;
             background-color: lightgray;
-            box-shadow: 5px 5px 5px black;
             margin: auto;
             padding: 2%;
         }
@@ -108,7 +108,7 @@
         }
         /* love intrest bar css */
         .hubby {
-            position: fixed;
+            position: relative;
             top: 60%;
             left: 35%;
             width: 41%;
@@ -166,7 +166,7 @@
                 We hope you enjoy your time here and find value in every visit.</p>
         </div>
     </div>
-    <!-- this part shows the love intrest bar -->
+    <!-- this part shows the love intrest bar
     <div class="hubby">
         <div class="Kirshima">
             <div id="hubbylook"></div>
@@ -187,7 +187,7 @@
             <div class="heart-bar">heart bar</div>
             <div><p>link to more info about character</p></div>
         </div>
-    </div>
+    </div> -->
 
 </body>
 
