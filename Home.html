@@ -5,6 +5,32 @@
     <head>
         <!--link rel="stylesheet" href="Home.css"-->
         <style>
+ /* links */
+        .links {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            font-size:clamp(14px, 1.9vw, 24px);
+        }
+        #home{
+            color:red;
+            position: fixed;
+            right: 3rem;
+            top: 300px;
+        }
+        #about{
+            color:blue;
+            position: fixed;
+            right:3rem;
+            top: 400px;
+        }
+        #contact{
+            color:green;
+            position: fixed;
+            right: 3rem;
+            top: 500px;
+        }
+/* //////////////////////////////////////////////////// */
+
          /* background */
         body {
             background-color:lightyellow;
@@ -18,7 +44,6 @@
             padding: 20px;
             
         }
-/* //////////////////////////////////////////////////// */
         /* page name */
         #covergirl{
             position: fixed;
@@ -43,35 +68,43 @@
             text-shadow: -5px 2px 1px rgb(134, 5, 80);
             letter-spacing: 5px;
         }
-        
-/* //////////////////////////////////////////////////// */
-        /* links */
-        .links {
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
-            font-size:clamp(14px, 1.9vw, 24px);
-        }
-        #home{
-            color:red;
-            position: fixed;
-            right: 3rem;
-            top: 300px;
-        }
-        #about{
+        .introduction{
             color:blue;
             position: fixed;
-            right:3rem;
-            top: 400px;
+            left: 4rem;
+            top: 32rem;
+            font-size: clamp(14px, 1.5vw, 18px);
         }
-        #contact{
-            color:green;
-            position: fixed;
-            right: 3rem;
-            top: 500px;
+        #welcome {
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 35%;
         }
+/* //////////////////////////////////////////////////// */
+        /* about me section */
+        .aboutMe {
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 35%;
+             position: fixed;
+            left: 4rem;
+            top: 90rem;
+        }
+       
     </style>
 </head>
-    <!--cover image-->
+    <!-- links -->
+    <div class="links">
+        <a href="Home.html" id="home">Home</a>
+        <a href="About.html" id="about">About</a>
+        <a href="Contact.html" id="contact">Contact</a>
+    </div>
+<!-- ////////////////////////////////////////////////////-->
+<main>
+    <section id="Home">
+         <!--cover image-->
     <div class="coverImage">
         <img src="shopping-mall-girl.png" alt="cover image" width="100%" height="100%">
     </div>
@@ -81,20 +114,18 @@
     <div id="pageName">
         KatsLovley
     </div>
-<!-- ////////////////////////////////////////////////////-->
-
-    <!-- links -->
-    <div class="links">
-        <a href="Home.html" id="home">Home</a>
-        <a href="About.html" id="about">About</a>
-        <a href="Contact.html" id="contact">Contact</a>
+    <div class="introduction">
+            <h1 id="hello">Hello, I'm Kat!</h1>
+            <p id="welcome">Welcome to my website! I'm a passionate fashion enthusiast and a lover of all things stylish. This website is a reflection of my love for fashion, beauty, and creativity. Here, you'll find a collection of my favorite looks, style tips, and fashion inspiration. Whether you're looking for outfit ideas, beauty advice, or just want to explore the world of fashion with me, you've come to the right place. Feel free to browse through my posts and get inspired to express your unique style. Thank you for visiting!</p>
     </div>
+    </section>
 <!-- ////////Scroll down section 2 ////////////////////////-->
-<!-- about me ?  -->
-
-
-</body>
-
+<!-- about me  -->
+    <section id="about">
+        <div class="aboutMe">
+            <h1>About Me</h1>
+        </div>
         
-
+</main>
+</body> 
 </html>
