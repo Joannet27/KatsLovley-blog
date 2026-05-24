@@ -1,194 +1,100 @@
 <!DOCTYPE html>
 <html>
 <title>KatsLovley</title>
-
-<head>
-    <!--javascript link-->
-    <!-- color light salmon -->
-    <style>
+<body>
+    <head>
+        <!--link rel="stylesheet" href="Home.css"-->
+        <style>
+         /* background */
         body {
-            background-color: rgb(199, 112, 240);
-            color: lightgray;
-            text-shadow: 3px 0px 0px black;
-            margin: 0;
-            padding: .5%;
+            background-color:lightyellow;
         }
-
-        /* need to set the positions of the shapes to overlap */
-        .borderimage {
-            height: 150px;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            background-color: grey;
-            overflow: hidden;
-        }
-
-        .Profile {
-            position: sticky;
-            top: 21%;
-            left: 150px;
-            width: 17%;
-            height: 75%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: lightgray;
-            box-shadow: -5px 5px 15px black;
-            border: 2px solid black;
-        }
-
-        .name {
-            background-color: grey;
-            width: 90%;
-            border: 2px solid black;
-            margin-top: 5%;
-            font-size:1.5vw;
-        }
-
-        /* profile image*/
-        .circle {
-            width:100%;
-            aspect-ratio: 1/1;
-            border-radius: 50%;
-            background-color: white;
-        }
-
-        #Name {
-            text-align: center;
-            text-shadow: none;
+        .coverImage img{
+            position: absolute;
+            max-width: 50%;
+            height: auto;
+            flex:1;
+            left: 25%;
+            padding: 20px;
             
         }
-
-        /* side box css */
-        .sideBox {
-            width: 90%;
-            margin: 15px;
-            padding: 1%;
-            background-color: grey;
-            border: 2px solid black;
+/* //////////////////////////////////////////////////// */
+        /* page name */
+        #covergirl{
+            position: fixed;
+            left: 4rem;
+            top: 100px;
+            font-size: 10rem;
+            font-weight: bold;
+            word-spacing: 200px;
+            z-index: -1;
+            color:lavender;
+            text-shadow: 5px 2px 10px rgb(134, 5, 80);
         }
-
-        #navig ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 10px;
+        /* pageName */
+        #pageName{
+            position: fixed;
+            right: 7rem;
+            top: 38rem;
+            font-size: 6rem;
+            font-weight: bold;
+            transform: rotate(-10deg);
+            color: rgb(247, 121, 232);
+            text-shadow: -5px 2px 1px rgb(134, 5, 80);
+            letter-spacing: 5px;
         }
-
-        #navig ul li {
-            padding: 10px;
-            border: 1px solid black;
-            border-radius: 25px;
-            margin-bottom: 7px;
-            background-color: palevioletred;
-            /* TBS color */
-            color: black;
-            text-shadow: none;
-            text-align: center;
+        
+/* //////////////////////////////////////////////////// */
+        /* links */
+        .links {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
             font-size:clamp(14px, 1.9vw, 24px);
-            font-size:1.5vw;
         }
-
-        /* welcome mesage box css */
-        .messageBox {
-            position: sticky;
-            top: 21%;
-            left: 35%;
-            width: 40%;
-            border: 2px solid black;
-            background-color: lightgray;
-            margin: auto;
-            padding: 2%;
+        #home{
+            color:red;
+            position: fixed;
+            right: 3rem;
+            top: 300px;
         }
-        .messageBox #hello {
-            margin-left: 10px;
-            margin-right: 10px;
-            color: black;
-            text-shadow: none;
+        #about{
+            color:blue;
+            position: fixed;
+            right:3rem;
+            top: 400px;
         }
-        /* love intrest bar css */
-        .hubby {
-            position: relative;
-            top: 60%;
-            left: 35%;
-            width: 41%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            border: 2px solid black;
-            box-shadow: 0px -5px 15px black;
-            padding: 0px 20px;
-            text-align: center;
-        }
-        #hubbylook{
-            width: 100px;
-            height: 100px;
-            border-radius: 40%;
-            background-color: grey;
-            margin: 10px 40px;
+        #contact{
+            color:green;
+            position: fixed;
+            right: 3rem;
+            top: 500px;
         }
     </style>
 </head>
-
-<body>
-    <div class="borderimage"></div>
-    <!-- profile image an naviagtion -->
-    <div class="Profile">
-        <div class="name">
-            <div class="circle"></div>
-            <div id="Name">
-                <h1>KatsLovley</h1>
-                <h3>she/her/they</h3>
-            </div>
-        </div>
-
-        <div class="sideBox">
-            <div id="navig">
-                <ul>
-                    <li>About me</li>
-                    <li>Porfolio</li>
-                    <li>Works</li>
-                    <li>Blog</li>
-                </ul>
-            </div>
-        </div>
+    <!--cover image-->
+    <div class="coverImage">
+        <img src="shopping-mall-girl.png" alt="cover image" width="100%" height="100%">
     </div>
-
-
-    <div class="messageBox">
-        <div id="hello">
-            <h1 style="text-align: center;">Welcome to my page!</h1>
-            <p> hello my name is Katslovely please to meet you welcome to my webpage look around</p>
-            <p>Welcome aboard!
-                This website brings together creativity, ideas, and helpful content in one place.
-                Whether youre here to learn, explore, or just browse, theres always something interesting waiting for
-                you.
-                We hope you enjoy your time here and find value in every visit.</p>
-        </div>
+    <div id="covergirl">
+        Cover Girl
     </div>
-    <!-- this part shows the love intrest bar
-    <div class="hubby">
-        <div class="Kirshima">
-            <div id="hubbylook"></div>
-            <h3>Kirshima</h3>
-            <div class="heart-bar">heart bar</div>
-            <div><p>link to more info about character</p></div>
-            
-        </div>
-        <div class="Dan Heng">
-            <div id="hubbylook"></div>
-            <h3>Dan Heng</h3>
-            <div class="heart-bar">heart bar</div>
-            <div><p>link to more info about character</p></div>
-        </div>
-        <div class="Lighter">
-            <div id="hubbylook"></div>
-            <h3>Lighter</h3>
-            <div class="heart-bar">heart bar</div>
-            <div><p>link to more info about character</p></div>
-        </div>
-    </div> -->
+    <div id="pageName">
+        KatsLovley
+    </div>
+<!-- ////////////////////////////////////////////////////-->
+
+    <!-- links -->
+    <div class="links">
+        <a href="Home.html" id="home">Home</a>
+        <a href="About.html" id="about">About</a>
+        <a href="Contact.html" id="contact">Contact</a>
+    </div>
+<!-- ////////Scroll down section 2 ////////////////////////-->
+<!-- about me ?  -->
+
 
 </body>
+
+        
 
 </html>

@@ -1,0 +1,199 @@
+
+<head>
+    <!--javascript link-->
+    <!-- color light salmon -->
+    <style>
+        body {
+            background-color: rgb(199, 112, 240);
+            color: lightgray;
+            text-shadow: 3px 0px 0px black;
+            margin: 0;
+            padding: .5%;
+        }
+
+        /* need to set the positions of the shapes to overlap */
+        .borderimage {
+            height: 150px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            background-color: grey;
+            overflow: hidden;
+        }
+
+        .Profile {
+            position: sticky;
+            top: 21%;
+            left: 150px;
+            width: 17%;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightgray;
+            box-shadow: -5px 5px 15px black;
+            border: 2px solid black;
+        }
+
+        .name {
+            background-color: grey;
+            width: 90%;
+            border: 2px solid black;
+            margin-top: 5%;
+            font-size:1.5vw;
+        }
+
+        /* profile image*/
+        .circle {
+            width:100%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        #Name {
+            text-align: center;
+            text-shadow: none;
+            
+        }
+
+        /* side box css */
+        .sideBox {
+            width: 90%;
+            margin: 15px;
+            padding: 1%;
+            background-color: grey;
+            border: 2px solid black;
+        }
+
+        #navig ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px;
+        }
+
+        #navig ul li {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 25px;
+            margin-bottom: 7px;
+            background-color: palevioletred;
+            /* TBS color */
+            color: black;
+            text-shadow: none;
+            text-align: center;
+            font-size:clamp(14px, 1.9vw, 24px);
+            font-size:1.5vw;
+        }
+
+        /* welcome mesage box css */
+        .messageBox {
+            position: sticky;
+            flex:1;
+            bottom: 20%;
+            left: 40%;
+            width: 45%;
+            height: 75%;
+            border: 2px solid black;
+            background-color: lightgray;
+            margin: auto;
+            padding: 2%;
+
+            /* position: sticky;
+            top: 21%;
+            left: 35%;
+            width: 40%;
+            bottom: 45%;
+            border: 2px solid black;
+            background-color: lightgray;
+            margin: auto;
+            padding: 2%; */
+        }
+        .messageBox #hello {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: black;
+            text-shadow: none;
+        }
+        /* love intrest bar css */
+        .hubby {
+            position: relative;
+            top: 60%;
+            left: 35%;
+            width: 41%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 2px solid black;
+            box-shadow: 0px -5px 15px black;
+            padding: 0px 20px;
+            text-align: center;
+        }
+        #hubbylook{
+            width: 100px;
+            height: 100px;
+            border-radius: 40%;
+            background-color: grey;
+            margin: 10px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="borderimage"></div>
+    <!-- profile image an naviagtion -->
+    <div class="Profile">
+        <div class="name">
+            <div class="circle"></div>
+            <div id="Name">
+                <h1>KatsLovley</h1>
+                <h3>she/her/they</h3>
+            </div>
+        </div>
+
+        <div class="sideBox">
+            <div id="navig">
+                <ul>
+                    <li>About me</li>
+                    <li>Porfolio</li>
+                    <li>Works</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="messageBox">
+        <div id="hello">
+            <h1 style="text-align: center;">Welcome to my page!</h1>
+            <p> hello my name is Katslovely please to meet you welcome to my webpage look around</p>
+            <p>Welcome aboard!
+                This website brings together creativity, ideas, and helpful content in one place.
+                Whether youre here to learn, explore, or just browse, theres always something interesting waiting for
+                you.
+                We hope you enjoy your time here and find value in every visit.</p>
+        </div>
+    </div>
+    <!-- this part shows the love intrest bar
+    <div class="hubby">
+        <div class="Kirshima">
+            <div id="hubbylook"></div>
+            <h3>Kirshima</h3>
+            <div class="heart-bar">heart bar</div>
+            <div><p>link to more info about character</p></div>
+            
+        </div>
+        <div class="Dan Heng">
+            <div id="hubbylook"></div>
+            <h3>Dan Heng</h3>
+            <div class="heart-bar">heart bar</div>
+            <div><p>link to more info about character</p></div>
+        </div>
+        <div class="Lighter">
+            <div id="hubbylook"></div>
+            <h3>Lighter</h3>
+            <div class="heart-bar">heart bar</div>
+            <div><p>link to more info about character</p></div>
+        </div>
+    </div> -->
