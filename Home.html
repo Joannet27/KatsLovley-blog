@@ -10,24 +10,23 @@
             font-family: 'Arial', sans-serif;
             font-weight: bold;
             font-size:clamp(14px, 1.9vw, 24px);
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            position:absolute;
+            right:3rem;
+            top: 20rem;
+            gap: 3rem;
+            
         }
         #home{
-            color:red;
-            position: fixed;
-            right: 3rem;
-            top: 300px;
+            color:red;  
         }
         #about{
             color:blue;
-            position: fixed;
-            right:3rem;
-            top: 400px;
         }
         #contact{
             color:green;
-            position: fixed;
-            right: 3rem;
-            top: 500px;
         }
 /* //////////////////////////////////////////////////// */
 
@@ -35,62 +34,66 @@
         body {
             background-color:lightyellow;
         }
+
         .coverImage img{
-            position: absolute;
+            position: relative;
             max-width: 50%;
             height: auto;
-            flex:1;
-            left: 25%;
-            padding: 20px;
+            left: 20rem;
+            display: block;
             
         }
         /* page name */
         #covergirl{
-            position: fixed;
-            left: 4rem;
-            top: 100px;
-            font-size: 10rem;
+            position: absolute;
+            left: 10%;
+            top:10%;
+            transform:translate(5%, -100%);
+            font-size: 10vw;
             font-weight: bold;
-            word-spacing: 200px;
+            word-spacing: 20vw;
             z-index: -1;
             color:lavender;
             text-shadow: 5px 2px 10px rgb(134, 5, 80);
         }
         /* pageName */
         #pageName{
-            position: fixed;
-            right: 7rem;
-            top: 38rem;
+            position: absolute;
+            right: 3rem;
+            top: 40rem;
             font-size: 6rem;
             font-weight: bold;
             transform: rotate(-10deg);
             color: rgb(247, 121, 232);
-            text-shadow: -5px 2px 1px rgb(134, 5, 80);
+            text-shadow: -5px 2px 1px rgb(134, 5, 80),-10px -3px 4px  rgb(213, 156, 41);
             letter-spacing: 5px;
         }
         .introduction{
             color:blue;
-            position: fixed;
-            left: 4rem;
-            top: 32rem;
+            position: absolute;
+            left: 9rem;
+            top: 30rem;
             font-size: clamp(14px, 1.5vw, 18px);
         }
         #welcome {
              display: flex;
             flex-direction: column;
             align-items: center;
-            width: 35%;
+            width: 30%;
         }
 /* //////////////////////////////////////////////////// */
         /* about me section */
         .aboutMe {
-             display: flex;
+             display: fixed;
             flex-direction: column;
             align-items: center;
             width: 35%;
-             position: fixed;
-            left: 4rem;
-            top: 90rem;
+            position: relative;
+                left: 4rem;
+                top: 40rem;
+                font-family: 'Arial', sans-serif;
+                font-weight: bold;
+                font-size:clamp(14px, 1.9vw, 24px);
         }
        
     </style>
@@ -106,11 +109,10 @@
     <section id="Home">
          <!--cover image-->
     <div class="coverImage">
+        <p id="covergirl">Cover Girl</p>
         <img src="shopping-mall-girl.png" alt="cover image" width="100%" height="100%">
     </div>
-    <div id="covergirl">
-        Cover Girl
-    </div>
+    
     <div id="pageName">
         KatsLovley
     </div>
@@ -124,6 +126,7 @@
     <section id="about">
         <div class="aboutMe">
             <h1>About Me</h1>
+            <p>Hi there! I'm Kat, a passionate fashion enthusiast and a lover of all things stylish. I created this website to share my love for fashion, beauty, and creativity with the world. Here, you'll find a collection of my favorite looks, style tips, and fashion inspiration. Whether you're looking for outfit ideas, beauty advice, or just want to explore the world of fashion with me, you've come to the right place. Feel free to browse through my posts and get inspired to express your unique style. Thank you for visiting!</p>
         </div>
         
 </main>
