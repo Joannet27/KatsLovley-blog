@@ -90,10 +90,17 @@
             width: 35%;
             position: relative;
                 left: 4rem;
-                top: 40rem;
+                top: 10rem;
                 font-family: 'Arial', sans-serif;
                 font-weight: bold;
                 font-size:clamp(14px, 1.9vw, 24px);
+        }
+                /* profile picture */
+        #circle {
+            width:50%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: white;
         }
        
     </style>
@@ -124,7 +131,10 @@
 <!-- ////////Scroll down section 2 ////////////////////////-->
 <!-- about me  -->
     <section id="about">
+        
         <div class="aboutMe">
+            <div id="circle"></div>
+            <!-- placeholder -->
             <h1>About Me</h1>
             <p>Hi there! I'm Kat, a passionate fashion enthusiast and a lover of all things stylish. I created this website to share my love for fashion, beauty, and creativity with the world. Here, you'll find a collection of my favorite looks, style tips, and fashion inspiration. Whether you're looking for outfit ideas, beauty advice, or just want to explore the world of fashion with me, you've come to the right place. Feel free to browse through my posts and get inspired to express your unique style. Thank you for visiting!</p>
         </div>
@@ -132,3 +142,26 @@
 </main>
 </body> 
 </html>
+
+<!-- css method for scrolling animation-->
+ <!-- 
+@keyframes panInLeft{
+from{
+opacity:0;
+transform:translateX(-100px); /* start off scree to the left */
+}
+to
+opacity:1;
+transform:translateX(0);/*end in of natual position */
+}
+}
+
+/* apply animation */
+.pan-element{
+animations:panInleft linear forward;
+animation-timeline:scroll(root);
+animation-range:entry 0% cover 40%;
+}
+
+
+ -->
