@@ -18,15 +18,19 @@
             top: 20rem;
             gap: 3rem;
             
+            
         }
         #home{
-            color:red;  
+            color:red;
+            text-decoration: none;  
         }
         #about{
             color:blue;
+            text-decoration: none;
         }
         #contact{
             color:green;
+            text-decoration: none;
         }
 /* //////////////////////////////////////////////////// */
 
@@ -36,25 +40,30 @@
         }
 
         .coverImage img{
-            position: relative;
-            max-width: 50%;
-            height: auto;
-            left: 20rem;
+
+            text-align: center;
+            width: 100%;
+            max-width:450px;
+            height:auto;
             display: block;
+            margin: 0 auto;
             
         }
         /* page name */
         #covergirl{
-            position: absolute;
-            left: 10%;
-            top:10%;
-            transform:translate(5%, -100%);
-            font-size: 10vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom:-110px;
+            margin-right: 5rem;
+            font-size: 8rem;
             font-weight: bold;
-            word-spacing: 20vw;
+            word-spacing: 150px;
             z-index: -1;
             color:lavender;
             text-shadow: 5px 2px 10px rgb(134, 5, 80);
+            
         }
         /* pageName */
         #pageName{
@@ -69,39 +78,50 @@
             letter-spacing: 5px;
         }
         .introduction{
-            color:blue;
+            display:flex;
+            flex-direction: column;
             position: absolute;
             left: 9rem;
             top: 30rem;
-            font-size: clamp(14px, 1.5vw, 18px);
+            font-size: clamp(14px, 1.5vw, 18px); 
         }
         #welcome {
-             display: flex;
-            flex-direction: column;
+             margin-top: 1rem;
+             font-family: 'Arial', sans-serif;
             align-items: center;
             width: 30%;
         }
 /* //////////////////////////////////////////////////// */
         /* about me section */
         .aboutMe {
-             display: fixed;
+            display: fixed;
             flex-direction: column;
             align-items: center;
+            margin-top: 14rem;
+            margin-left: 9rem;
             width: 35%;
-            position: relative;
-                left: 4rem;
-                top: 10rem;
-                font-family: 'Arial', sans-serif;
-                font-weight: bold;
-                font-size:clamp(14px, 1.9vw, 24px);
+            font-family: 'Arial', sans-serif;
+            font-size:24px;
+            
         }
-                /* profile picture */
-        #circle {
-            width:50%;
-            aspect-ratio: 1/1;
-            border-radius: 50%;
-            background-color: white;
+        .trapezoid {
+            width: auto;
+            height: auto;
+            background-color: lightpink;
+            clip-path: polygon(0 10%, 100% 0%, 80% 100%, 10% 100%);
+            padding: 2rem;
+            
         }
+        .parallelogram {
+            background-color: lightblue;
+            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+            margin-top: 2rem;
+            padding: 30px;
+      
+        }
+        
+
+            
        
     </style>
 </head>
@@ -133,18 +153,48 @@
     <section id="about">
         
         <div class="aboutMe">
-            <div id="circle"></div>
+            
             <!-- placeholder -->
             <h1>About Me</h1>
-            <p>Hi there! I'm Kat, a passionate fashion enthusiast and a lover of all things stylish. I created this website to share my love for fashion, beauty, and creativity with the world. Here, you'll find a collection of my favorite looks, style tips, and fashion inspiration. Whether you're looking for outfit ideas, beauty advice, or just want to explore the world of fashion with me, you've come to the right place. Feel free to browse through my posts and get inspired to express your unique style. Thank you for visiting!</p>
+            <div class="trapezoid">
+                <p>Hi there! I'm Kat, a passionate fashion enthusiast and a lover of all things stylish. I created this website to share my love for fashion, beauty, and creativity with the world. Here, you'll find a collection of my favorite looks, style tips, and fashion inspiration.</p>
+            </div>
+           <div class="parallelogram"> 
+                <p> Whether you're looking for outfit ideas, beauty advice, or just want to explore the world of fashion with me, you've come to the right place. Feel free to browse through my posts and get inspired to express your unique style. Thank you for visiting!</p>
+            </div>
         </div>
         
 </main>
 </body> 
 </html>
 
-<!-- css method for scrolling animation-->
- <!-- 
+
+<!-- /* decide later on the profile image
+            html:
+        <div id="circle">
+            <img src="White-Icons-Photos.jpg" alt="profile picture" width="100%" height="100%">
+        </div>
+
+            css:
+#circle img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* shape the image into a circle */
+            width:50%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
+
+
+
+
+
+
+
+/* 
+css method for scrolling animation
+ 
 @keyframes panInLeft{
 from{
 opacity:0;
@@ -162,6 +212,4 @@ animations:panInleft linear forward;
 animation-timeline:scroll(root);
 animation-range:entry 0% cover 40%;
 }
-
-
- -->
+  */ -->
