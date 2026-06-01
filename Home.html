@@ -102,21 +102,41 @@
             width: 35%;
             font-family: 'Arial', sans-serif;
             font-size:24px;
-            
         }
+       .aboutMe p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(104, 2, 120);
+        }
+        
         .trapezoid {
-            width: auto;
-            height: auto;
-            background-color: lightpink;
+            width: 100%; 
+            max-width: 400px;
+            height: 100%;
+            max-height: 400px;
+            
+            position: relative;
+            left:20rem;
+
+            background-color: rgb(252 191 200 );
             clip-path: polygon(0 10%, 100% 0%, 80% 100%, 10% 100%);
-            padding: 2rem;
+             padding: 10px 120px;
+             margin-bottom: 2rem;
             
         }
         .parallelogram {
+             width: 100%; 
+            max-width: 400px;
+            height: 100%;
+            max-height: 400px;
+
+position: relative;
+            left:20rem;
+
             background-color: lightblue;
             clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-            margin-top: 2rem;
-            padding: 30px;
+            padding: 10px 120px;
       
         }
         
@@ -156,12 +176,15 @@
             
             <!-- placeholder -->
             <h1>About Me</h1>
-            <div class="trapezoid">
+            
+                <div class="trapezoid">
                 <p>Hi there! I'm Kat, a passionate fashion enthusiast and a lover of all things stylish. I created this website to share my love for fashion, beauty, and creativity with the world. Here, you'll find a collection of my favorite looks, style tips, and fashion inspiration.</p>
             </div>
            <div class="parallelogram"> 
                 <p> Whether you're looking for outfit ideas, beauty advice, or just want to explore the world of fashion with me, you've come to the right place. Feel free to browse through my posts and get inspired to express your unique style. Thank you for visiting!</p>
             </div>
+            
+            
         </div>
         
 </main>
