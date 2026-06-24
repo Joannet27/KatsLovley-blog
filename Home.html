@@ -5,168 +5,12 @@
 <body>
 
     <head>
-        <!--link rel="stylesheet" href="Home.css"-->
-        <style>
-            /* links */
-            .links {
-                font-family: 'Arial', sans-serif;
-                font-weight: bold;
-                font-size: clamp(14px, 1.9vw, 24px);
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                position: absolute;
-                right: 3rem;
-                top: 20rem;
-                gap: 3rem;
-
-            }
-
-            #home {
-                color: red;
-                text-decoration: none;
-            }
-
-            #about {
-                color: blue;
-                text-decoration: none;
-            }
-
-            #contact {
-                color: green;
-                text-decoration: none;
-            }
-
-            /* //////////////////////////////////////////////////// */
-
-            /* background */
-            body {
-                background-color: lightyellow;
-            }
-
-            .coverImage img {
-
-                text-align: center;
-                width: 100%;
-                max-width: 450px;
-                height: auto;
-                display: block;
-                margin: 0 auto;
-
-            }
-
-            /* page name */
-            #covergirl {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                margin-bottom: -110px;
-                margin-right: 5rem;
-                font-size: 8rem;
-                font-weight: bold;
-                word-spacing: 150px;
-                z-index: -1;
-                color: lavender;
-                text-shadow: 5px 2px 10px rgb(134, 5, 80);
-
-            }
-
-            /* pageName */
-            #pageName {
-                position: absolute;
-                right: 3rem;
-                top: 40rem;
-                font-size: 6rem;
-                font-weight: bold;
-                transform: rotate(-10deg);
-                color: rgb(247, 121, 232);
-                text-shadow: -5px 2px 1px rgb(134, 5, 80), -10px -3px 4px rgb(213, 156, 41);
-                letter-spacing: 5px;
-            }
-
-            .introduction {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                left: 9rem;
-                top: 30rem;
-                font-size: clamp(14px, 1.5vw, 18px);
-            }
-
-            #welcome {
-                margin-top: 1rem;
-                font-family: 'Arial', sans-serif;
-                align-items: center;
-                width: 30%;
-            }
-
-            /* //////////////////////////////////////////////////// */
-            /* about me section */
-
-            #aboutPart {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                margin-top: 14rem;
-
-                background-color: rgb(191, 252, 203);
-
-            }
-
-            #aboutPart p {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: rgb(104, 2, 120);
-                font-family: 'Arial', sans-serif;
-                font-size: 24px;
-            }
-
-            .a {
-                width: 35%;
-                height: 37rem;
-                position: absolute;
-                padding: 0px 50px;
-            }
-
-
-
-            #trapezoid {
-                width: 100%;
-                max-width: 400px;
-                height: 100%;
-                max-height: 400px;
-                background-color: rgb(252 191 200);
-                position: relative;
-                left: 40rem;
-                clip-path: polygon(0 10%, 100% 0%, 80% 100%, 10% 100%);
-                padding: 10px 120px;
-                margin-bottom: 2rem;
-
-            }
-
-            #parallelogram {
-                width: 100%;
-                max-width: 400px;
-                height: 100%;
-                max-height: 400px;
-                background-color: lightblue;
-                position: relative;
-                left: 40rem;
-                clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-                padding: 10px 120px;
-            }
-        /* Work Grid */
-
-
-
-
-            /* testing */
- 
-
-            /* Testing */
-        </style>
+        <!-- css link -->
+        <link rel="stylesheet" href="home.css">
+        <!-- JS link -->
+         <script src="KatsLovey.js"></script>
+        <!-- jQuery -->
+         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     </head>
     <!-- links -->
     <div class="links">
@@ -236,16 +80,18 @@
             <!-- grid layout for works -->
             <div class="works-grid">
                 <!-- going to use Masonry grid jquery on this  -->
-                <div class="work-item">
-                    <img src="White-Icons-Photos.jpg" alt="Work 1" width="20%" height="50%">
-                    <img src="White-Icons-Photos.jpg" alt="Work 1" width="20%" height="50%">
-                    <img src="White-Icons-Photos.jpg" alt="Work 1" width="20%" height="50%">
-                    <img src="White-Icons-Photos.jpg" alt="Work 1" width="20%" height="50%">
-                    <img src="White-Icons-Photos.jpg" alt="Work 1" width="20%" height="50%">
-                    <img src="White-Icons-Photos.jpg" alt="Work 1" width="20%" height="50%">
-                    <img src="White-Icons-Photos.jpg" alt="Work 1" width="20%" height="50%">
-                    <img src="White-Icons-Photos.jpg" alt="Work 1" width="20%" height="50%">
-                </div>
+                <div class="grid-item">
+                            <img src="White-Icons-Photos.jpg" alt="Work 1" width="100%" height="100%">
+                        </div>
+                        <div class="grid-item">
+                            <img src="White-Icons-Photos.jpg" alt="Work 2" width="100%" height="100%">
+                        </div>
+                        <div class="grid-item">
+                            <img src="White-Icons-Photos.jpg" alt="Work 1" width="100%" height="100%">
+                        </div>
+                        <div class="grid-item">
+                            <img src="White-Icons-Photos.jpg" alt="Work 2" width="100%" height="100%">
+                        </div>
 
             </div>
 

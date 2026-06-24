@@ -1,0 +1,202 @@
+  /* Sparkle trail effect */
+  .spark {
+      position: fixed;
+      pointer-events: none;
+  }
+
+  .spark:before,
+  .spark:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '\2726';
+      /* Unicode sparkle character */
+      font-size: 20px;
+  }
+
+  .spark::before {
+      color: transparent;
+      text-shadow: 0 0 5px #fdfef9;
+  }
+
+  .spark::after {
+      background-image: linear-gradient(to bottom right, #fac3da, #e2c8eb, #60dffb);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  /* ///////////////////////////////////////////////////////// */
+
+  /* links */
+  .links {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: clamp(14px, 1.9vw, 24px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      position: absolute;
+      right: 3rem;
+      top: 20rem;
+      gap: 3rem;
+
+  }
+
+  #home {
+      color: red;
+      text-decoration: none;
+  }
+
+  #about {
+      color: blue;
+      text-decoration: none;
+  }
+
+  #contact {
+      color: green;
+      text-decoration: none;
+  }
+
+  /* //////////////////////////////////////////////////// */
+
+  /* background */
+  body {
+      background-color: lightyellow;
+  }
+
+  .coverImage img {
+
+      text-align: center;
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+
+  }
+
+  /* page name */
+  #covergirl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: -110px;
+      margin-right: 5rem;
+      font-size: 8rem;
+      font-weight: bold;
+      word-spacing: 150px;
+      z-index: -1;
+      color: lavender;
+      text-shadow: 5px 2px 10px rgb(134, 5, 80);
+
+  }
+
+  /* pageName */
+  #pageName {
+      position: absolute;
+      right: 3rem;
+      top: 40rem;
+      font-size: 6rem;
+      font-weight: bold;
+      transform: rotate(-10deg);
+      color: rgb(247, 121, 232);
+      text-shadow: -5px 2px 1px rgb(134, 5, 80), -10px -3px 4px rgb(213, 156, 41);
+      letter-spacing: 5px;
+  }
+
+  .introduction {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 9rem;
+      top: 30rem;
+      font-size: clamp(14px, 1.5vw, 18px);
+  }
+
+  #welcome {
+      margin-top: 1rem;
+      font-family: 'Arial', sans-serif;
+      align-items: center;
+      width: 30%;
+  }
+
+  /* //////////////////////////////////////////////////// */
+  /* about me section */
+
+  #aboutPart {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 14rem;
+
+      background-color: rgb(191, 252, 203);
+
+  }
+
+  #aboutPart p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(104, 2, 120);
+      font-family: 'Arial', sans-serif;
+      font-size: 24px;
+  }
+
+  .a {
+      width: 35%;
+      height: 37rem;
+      position: absolute;
+      padding: 0px 50px;
+  }
+
+
+
+  #trapezoid {
+      width: 100%;
+      max-width: 400px;
+      height: 100%;
+      max-height: 400px;
+      background-color: rgb(252 191 200);
+      position: relative;
+      left: 40rem;
+      clip-path: polygon(0 10%, 100% 0%, 80% 100%, 10% 100%);
+      padding: 10px 120px;
+      margin-bottom: 2rem;
+
+  }
+
+  #parallelogram {
+      width: 100%;
+      max-width: 400px;
+      height: 100%;
+      max-height: 400px;
+      background-color: lightblue;
+      position: relative;
+      left: 40rem;
+      clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+      padding: 10px 120px;
+  }
+
+  /* //////////////////////////////////////////////////// */
+  /* test the pan */
+  @keyframes panInLeft {
+      from {
+          opacity: 0;
+          transform: translateX(-100px);
+          /* start off scree to the left */
+      }
+
+      to {
+          opacity: 1;
+          transform: translateX(0);
+          /*end in of natual position */
+      }
+  }
+
+  /* apply animation */
+  .pan-element {
+      animations: panInleft linear forward;
+      animation-timeline: scroll(root);
+      animation-range: entry 0% cover 40%;
+  }
