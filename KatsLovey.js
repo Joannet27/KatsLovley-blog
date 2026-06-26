@@ -28,3 +28,4 @@ window.addEventListener('mousemove', function(e) {
     columnWidth: '.grid-sizer'
   });
 });
+// --- end of masonry layout code ----
