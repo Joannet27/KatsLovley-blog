@@ -20,3 +20,11 @@ window.addEventListener('mousemove', function(e) {
 },false);
 
 // ---- end of sparkle trail effect  code------
+
+//---- Masonry layout for the works section ----
+    var $grid = $('.grid').imagesLoaded(function() {
+  $grid.masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer'
+  });
+});

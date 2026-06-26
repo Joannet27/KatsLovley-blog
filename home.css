@@ -1,29 +1,3 @@
-  /* Sparkle trail effect */
-  .spark {
-      position: fixed;
-      pointer-events: none;
-  }
-
-  .spark:before,
-  .spark:after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: '\2726';
-      /* Unicode sparkle character */
-      font-size: 20px;
-  }
-
-  .spark::before {
-      color: transparent;
-      text-shadow: 0 0 5px #fdfef9;
-  }
-
-  .spark::after {
-      background-image: linear-gradient(to bottom right, #fac3da, #e2c8eb, #60dffb);
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-  }
 
   /* ///////////////////////////////////////////////////////// */
 
@@ -177,26 +151,75 @@
       clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
       padding: 10px 120px;
   }
+  /*  work  grid css */
+    .works-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .grid-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+
+
+  /* Sparkle trail effect */
+  .spark {
+      position: fixed;
+      pointer-events: none;
+  }
+
+  .spark:before,
+  .spark:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '\2726';
+      /* Unicode sparkle character */
+      font-size: 20px;
+  }
+
+  .spark::before {
+      color: transparent;
+      text-shadow: 0 0 5px #fdfef9;
+  }
+
+  .spark::after {
+      background-image: linear-gradient(to bottom right, #fac3da, #e2c8eb, #60dffb);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
 
   /* //////////////////////////////////////////////////// */
   /* test the pan */
-  @keyframes panInLeft {
+  /* @keyframes panInLeft {
       from {
           opacity: 0;
           transform: translateX(-100px);
           /* start off scree to the left */
-      }
+      /* } */
 
-      to {
-          opacity: 1;
-          transform: translateX(0);
+      /* to { */
+          /* opacity: 1; */
+          /* transform: translateX(0); */
           /*end in of natual position */
-      }
-  }
+      /* } */
+  /* } */
 
   /* apply animation */
-  .pan-element {
-      animations: panInleft linear forward;
-      animation-timeline: scroll(root);
-      animation-range: entry 0% cover 40%;
-  }
+  /* .works-grid { */
+      /* animation: panInleft linear forward; */
+      /* animation-timeline: view(); */
+/* scroll(root) */
+      /* animation-range: entry 0% cover 40%; */
+  /* } */ 
