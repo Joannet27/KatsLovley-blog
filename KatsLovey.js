@@ -9,8 +9,8 @@ window.addEventListener('mousemove', function(e) {
         let spark = document.createElement('div');
         // show spark on the possition of the sursor location and dispear after a certain time
         spark.className = 'spark';
-        spark.style.left = e.pageX + Math.round(Math.random() * x - x / 2)+ 'px';
-        spark.style.top = e.pageY + Math.round(Math.random() * x - x / 2)+ 'px';
+        spark.style.left = e.clientX + Math.round(Math.random() * x - x / 2)+ 'px';
+        spark.style.top = e.clientY + Math.round(Math.random() * x - x / 2)+ 'px';
        
         document.body.appendChild(spark);
         window.setTimeout(function() {

@@ -40,9 +40,11 @@
         flex-direction: column;
         align-items: center;
   }
+  main{
+    
+    background-color: rgb(255, 247, 208);
 
   .coverImage img {
-
       text-align: center;
       width: 100%;
       max-width: 450px;
@@ -56,8 +58,6 @@
   #covergirl {
       display: flex;
       justify-content: center;
-      /*-*/
-      position: relative;
       margin-bottom: -110px;
       margin-right: 5rem;
       font-size: 8rem;
@@ -73,7 +73,7 @@
   #pageName {
       position: absolute;
       right: 32rem;
-      top: 40rem;
+      top: 39rem;
       font-size: 6rem;
       font-weight: bold;
       transform: rotate(-10deg);
@@ -86,9 +86,10 @@
       display: flex;
       flex-direction: column;
       position: absolute;
-      left: 35rem;
+      left: 36rem;
       top: 40rem;
       font-size: clamp(14px, 1.5vw, 18px);
+      padding: 10px 23px;
   }
 
   #welcome {
@@ -164,10 +165,15 @@
     /* ------------------------ this s good ----------------------------- */
 
   /*  work  grid css */
+  #works h1, #works p {
+    display: flex;
+    justify-content: center;
+  }
     .works-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 20px;
+        padding: 20px;
     }
 
     .grid-item {
@@ -183,21 +189,22 @@
 
 
 
+/* allow cursor to show */
+
 
   /* Sparkle trail effect */
   .spark {
       position: fixed;
       pointer-events: none;
   }
-
-  .spark:before,
-  .spark:after {
+  .spark:before, .spark:after {
       position: absolute;
       top: 0;
       left: 0;
       content: '\2726';
       /* Unicode sparkle character */
       font-size: 20px;
+      
   }
 
   .spark::before {
