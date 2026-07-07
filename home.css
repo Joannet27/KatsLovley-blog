@@ -9,7 +9,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      position: absolute;
+      position: fixed;
       right: 3rem;
       top: 20rem;
       gap: 3rem;
@@ -56,7 +56,7 @@
   #covergirl {
       display: flex;
       justify-content: center;
-      align-items: center;
+      /*-*/
       position: relative;
       margin-bottom: -110px;
       margin-right: 5rem;
@@ -72,7 +72,7 @@
   /* pageName */
   #pageName {
       position: absolute;
-      right: 3rem;
+      right: 32rem;
       top: 40rem;
       font-size: 6rem;
       font-weight: bold;
@@ -86,15 +86,15 @@
       display: flex;
       flex-direction: column;
       position: absolute;
-      left: 9rem;
-      top: 30rem;
+      left: 35rem;
+      top: 40rem;
       font-size: clamp(14px, 1.5vw, 18px);
   }
 
   #welcome {
       margin-top: 1rem;
       font-family: 'Arial', sans-serif;
-      align-items: center;
+      /*-*/
       width: 30%;
   }
 
@@ -104,55 +104,57 @@
   #aboutPart {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
       margin-top: 14rem;
-
       background-color: rgb(191, 252, 203);
-
+      padding: 2px 10px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   }
 
   #aboutPart p {
       display: flex;
       justify-content: center;
-      align-items: center;
       color: rgb(104, 2, 120);
       font-family: 'Arial', sans-serif;
       font-size: 24px;
   }
 
   .a {
-      width: 35%;
-      height: 37rem;
+      width: 20%;
+      height: 100%;
+      max-height:530px;
       position: absolute;
-      padding: 0px 50px;
+      padding: 10px 10px;
+
   }
 
 
 
   #trapezoid {
-      width: 100%;
+      width: 50%;
       max-width: 400px;
       height: 100%;
       max-height: 400px;
       background-color: rgb(252 191 200);
       position: relative;
-      left: 40rem;
+      left: 20rem;
       clip-path: polygon(0 10%, 100% 0%, 80% 100%, 10% 100%);
       padding: 10px 120px;
-      margin-bottom: 2rem;
+      margin-top: 2px;
 
   }
 
   #parallelogram {
-      width: 100%;
+      width: 50%;
       max-width: 400px;
       height: 100%;
-      max-height: 400px;
+      max-height: 270px;
       background-color: lightblue;
       position: relative;
-      left: 40rem;
+      left: 20rem;
       clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-      padding: 10px 120px;
+      margin: 10px 5px;
+      padding: 1px 120px;
   }
 
 
