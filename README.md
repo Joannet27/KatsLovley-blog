@@ -15,6 +15,6 @@ where user can explore and enjoy expressing themself and place their work on
 - *welcome section*
 - *about me section*
 - *show case/work section*
-(updates: 7/20/2026)
+####(updates: 7/20/2026)
 The original ideal of the page layout is changed to make it as a porfolio like than blog and lean to look like a magazine.
 Majority of the desighn works but adjustingment and placement need to be fixed 
